@@ -144,17 +144,6 @@ pre[data-line] {
 	white-space: pre;
 }
 
-@media print {
-	.line-highlight {
-		/*
-		 * This will prevent browsers from replacing the background color with white.
-		 * It's necessary because the element is layered on top of the displayed code.
-		 */
-		-webkit-print-color-adjust: exact;
-		color-adjust: exact;
-	}
-}
-
 	.line-highlight:before,
 	.line-highlight[data-end]:after {
 		content: attr(data-start);
@@ -271,7 +260,15 @@ pre[class*="language-"].line-numbers > code {
 
 div.code-toolbar {
 	position: relative;
-}
+	margin: 10px 0;   /* reduce space above/below */
+	padding: 0;       /* remove internal spacing */
+  }
+  
+  div.code-toolbar pre {
+	margin: 0;        /* remove default margin */
+	padding: 10px;    /* adjust for consistent spacing */
+  }
+  
 
 div.code-toolbar > .toolbar {
 	position: absolute;
@@ -307,9 +304,6 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
 	line-height: normal;
 	overflow: visible;
 	padding: 0;
-	-webkit-user-select: none; /* for button */
-	-moz-user-select: none;
-	-ms-user-select: none;
 }
 
 div.code-toolbar > .toolbar > .toolbar-item > a,

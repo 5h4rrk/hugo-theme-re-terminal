@@ -1,25 +1,25 @@
 :root {
-  --accent-contrast-color: white;
+  --accent-contrast-color: #002b36; /* very dark blue for contrast */
   --article-link-color: var(inherit);
-  --background: color-mix(in srgb, var(--accent) 2%, #fefcfa 98%);
+  --background: #fdf6e3; /* base3 */
   --border-color: rgba(0, 0, 0, 0.1);
-  --color: black;
-  --menu-color: black;
+  --color: #586e75; /* base00 */
+  --menu-color: #586e75;
 
-  // Use in code syntax highlighting
-  --syntax-func-color: color-mix(in srgb, var(--accent) 70%, #000 30%);
-  --syntax-var-color: color-mix(in srgb, var(--accent) 90%, #000);
-  --syntax-value-color: color-mix(in srgb, var(--accent), black);
-  --syntax-punctuation-color: black;
-  --syntax-comment-color: rgba(0, 0, 0, 0.3);
-  --syntax-line-highlight-mix: color-mix(in srgb, var(--accent) 90%, #000 10%);
-  --syntax-line-highlight-background-color: hsla(336, 20%, 50%, 0.4);
-  --syntax-line-highlight-color: hsl(336, 20%, 95%);
-  --syntax-line-highlight-box-shadow: black;
-  --syntax-code-border-color: rgba(0, 0, 0, 0.1);
-  --syntax-code-copy-button-background: hsla(360, 0%, 87.8%, 0.2);
-  --syntax-code-copy-button-color: #444;
-  --syntax-code-copy-button-box-shadow-color: rgba(255, 255, 255, 0.2);
+  // Syntax highlighting (Solarized Light)
+  --syntax-func-color: #268bd2; /* blue */
+  --syntax-var-color: #b58900;  /* yellow */
+  --syntax-punctuation-color: #657b83; /* base01 */
+  --syntax-value-color: #2aa198; /* cyan */
+  --syntax-comment-color: #93a1a1; /* base1 */
+  --syntax-line-highlight-mix: #eee8d5;
+  --syntax-line-highlight-background-color: #eee8d5; /* base2 */
+  --syntax-line-highlight-color: #073642; /* base02 */
+  --syntax-line-highlight-box-shadow: rgba(0, 0, 0, 0.05);
+  --syntax-code-border-color: rgba(0, 0, 0, 0.05);
+  --syntax-code-copy-button-background: rgba(0, 0, 0, 0.05);
+  --syntax-code-copy-button-color: #586e75;
+  --syntax-code-copy-button-box-shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 // Native CSS Variable aren't supported in a combination with MEDIA QUERIES. Wait for a new standard https://drafts.csswg.org/css-env-1/

@@ -45,20 +45,20 @@
 
         {{ partial "cover.html" . }}
 
-        <div class="post-content">
-          {{ if .Params.showFullContent }}
-            {{ .Content }}
-          {{ else if .Description }}
-            {{ .Description | markdownify }}
-          {{ else }}
-            {{ .Summary }}
-          {{ end }}
-        </div>
+      <div class="post-content">
+        {{ if .Params.showFullContent }}
+          {{ .Content }}
+        {{ else if .Description }}
+          <em>{{ .Description | markdownify }}</em>
+        {{ else }}
+          <em>{{ .Summary }}</em>
+        {{ end }}
+      </div>
 
         {{ if not .Params.showFullContent }}
-          <div>
+          <!-- <div>
             <a class="read-more button" href="{{.RelPermalink}}">{{ $.Site.Params.ReadMore }} →</a>
-          </div>
+          </div> -->
         {{ end }}
       </article>
     {{ end }}

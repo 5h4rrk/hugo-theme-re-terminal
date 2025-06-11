@@ -46,9 +46,20 @@
   src: url('../fonts/Inter-Bold.woff2') format('woff2');
 }
 
-body {
-  font-family: 'Inter', sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
+@font-face {
+  font-family: 'PlaypenSans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/PlaypenSans-Medium.ttf') format('tff');
 }
+
+@font-face {
+  font-family: 'PressStart2P';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/PressStart2P-Regular.ttf') format('tff');
+}
+
 

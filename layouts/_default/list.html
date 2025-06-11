@@ -39,9 +39,9 @@
           {{ if .Params.showFullContent }}
             {{ .Content }}
           {{ else if .Description }}
-            {{ .Description | markdownify }}
+            <em>{{ .Description | markdownify }}</em>
           {{ else }}
-            {{ .Summary }}
+            <em>{{ .Summary }}</em>
           {{ end }}
         </div>
 
